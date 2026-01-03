@@ -48,9 +48,11 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <Button variant="primary" size="sm">
-              تبرّع الآن
-            </Button>
+            <Link to="/donate">
+              <Button variant="primary" size="sm">
+                تبرّع الآن
+              </Button>
+            </Link>
             <button className="lg:hidden text-gray-700">
               <Menu size={24} />
             </button>

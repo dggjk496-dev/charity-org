@@ -7,6 +7,8 @@ import Projects from './pages/Projects';
 import President from './pages/President';
 import Contact from './pages/Contact';
 import News from './pages/News';
+import Donate from './pages/Donate';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/president" element={<President />} />
           <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
